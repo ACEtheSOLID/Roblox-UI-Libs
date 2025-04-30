@@ -22,7 +22,7 @@ local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheS
 ]=]
 local Iris = {} :: Types.Iris
 
-local Internal: Types.Internal = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/Internal"))()(Iris)
+local Internal: Types.Internal = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/Internal"), Iris)()
 
 --[=[
     @within Iris
