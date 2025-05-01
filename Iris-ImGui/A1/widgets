@@ -1,8 +1,6 @@
 local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/Types"))()
-local Iris = getgenv().Iris
 
-getgenv().widgets = {} :: Types.WidgetUtility
-local widgets = getgenv().widgets
+local widgets = {} :: Types.WidgetUtility
 
 return function(Iris: Types.Internal)
     widgets.GuiService = game:GetService("GuiService")
@@ -425,25 +423,25 @@ return function(Iris: Types.Internal)
 
     Iris._utility = widgets
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Root"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Window"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Root"))(Iris, widgets)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Window"))(Iris, widgets)
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Menu"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Menu"))(Iris, widgets)
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Format"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Format"))(Iris, widgets)
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Text"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Button"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Checkbox"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/RadioButton"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Image"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Text"))(Iris, widgets)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Button"))(Iris, widgets)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Checkbox"))(Iris, widgets)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/RadioButton"))(Iris, widgets)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Image"))(Iris, widgets)
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Tree"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Tab"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Tree"))(Iris, widgets)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Tab"))(Iris, widgets)
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Input"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Combo"))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Plot"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Input"))(Iris, widgets)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Combo"))(Iris, widgets)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Plot"))(Iris, widgets)
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Table"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/B1/Table"))(Iris, widgets)
 end
