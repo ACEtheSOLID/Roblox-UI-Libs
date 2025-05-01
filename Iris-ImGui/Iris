@@ -20,9 +20,9 @@ local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheS
     end)
     ```
 ]=]
-local Iris = {} :: Types.Iris
+Iris = {} :: Types.Iris
 
-local Internal: Types.Internal = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/Internal"))()(Iris)
+Internal: Types.Internal = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/Internal"))()
 
 --[=[
     @within Iris
@@ -666,9 +666,9 @@ end
     Iris:Connect(Iris.ShowDemoWindow)
     ```
 ]=]
-Iris.ShowDemoWindow = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/demoWindow"))(Iris)
+Iris.ShowDemoWindow = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/demoWindow"))()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/widgets"))(Internal)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/API"))(Iris)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/widgets"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/API"))()
 
 return Iris
