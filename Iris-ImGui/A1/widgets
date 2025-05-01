@@ -1,6 +1,8 @@
 local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/Types"))()
+local Iris = getgenv().Iris
 
-widgets = {} :: Types.WidgetUtility
+getgenv().widgets = {} :: Types.WidgetUtility
+local widgets = getgenv().widgets
 
 return function(Iris: Types.Internal)
     widgets.GuiService = game:GetService("GuiService")

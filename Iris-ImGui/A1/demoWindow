@@ -1,4 +1,5 @@
 local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/Types"))()
+local Iris = getgenv().Iris
 
 return function(Iris: Types.Iris)
     local showMainWindow = Iris.State(true)

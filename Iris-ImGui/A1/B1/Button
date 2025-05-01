@@ -1,4 +1,6 @@
 local Types = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris-ImGui/A1/Types"))()
+local Iris = getgenv().Iris
+local widgets = getgenv().widgets
 
 return function(Iris: Types.Internal, widgets: Types.WidgetUtility)
     local abstractButton = {
