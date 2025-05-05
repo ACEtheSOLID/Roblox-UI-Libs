@@ -1151,7 +1151,7 @@ function Iris.ComputedState(firstState, onChangeCallback)
 end
 
 --// Iris.ShowDemoWindow = require(script.demoWindow)(Iris) \\--
-function Iris.ShowDemoWindow(Iris)
+function Iris.ShowDemoWindow()
 	local showMainWindow = Iris.State(true)
 	local showRecursiveWindow = Iris.State(false)
 	local showRuntimeInfo = Iris.State(false)
