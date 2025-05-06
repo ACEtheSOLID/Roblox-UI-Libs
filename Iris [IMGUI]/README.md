@@ -7,7 +7,7 @@ Created a new version for the latest version of Iris *(Iris v2.4.1)* by [me](htt
 ```lua
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
-local Iris = 
+local Iris = loadstring(game:HttpGet("https://raw.githubusercontent.com/ACEtheSOLID/Roblox-UI-Libs/main/Iris%20%5BIMGUI%5D/Source-v2.4.1"))()
 
 Iris.Init(LocalPlayer.PlayerGui)
 Iris:Connect(Iris.ShowDemoWindow)
